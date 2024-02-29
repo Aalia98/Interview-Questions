@@ -1,5 +1,48 @@
 ## HTML Questions ----
 
+# Notes:-
+- 1989	Tim Berners-Lee invented www
+- 1991	Tim Berners-Lee invented HTML
+- HTML tags are not case sensitive: <P> means the same as <p>.
+- The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.
+- All HTML elements can have attributes. Attributes provide additional information about elements.Attributes are always specified in the start tag. Attributes usually come in name/value pairs like: name="value" 
+- There are two ways to specify the URL in the src attribute:
+
+1. Absolute URL - Example: src="https://www.w3schools.com/images/img_girl.jpg".
+
+2. Relative URL - Example: src="/images/img_girl.jpg".
+
+- the first two characters define the language of the HTML page, and the last two characters define the country.
+<html lang="en-US">
+
+- _self - Default. Opens the document in the same window/tab as it was clicked
+- _blank - Opens the document in a new window or tab
+- _parent - Opens the document in the parent frame
+- _top - Opens the document in the full body of the window
+
+- <img>	Defines an image
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+- usemap -> The usemap value starts with a hash tag # followed by the name of the image map, and is used to create a relationship between the image and the image map.
+
+- <map>	Defines an image map
+- <area>	Defines a clickable area inside an image map
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map> 
+
+- <picture>	Defines a container for multiple image resources
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+
 1. What is the difference between HTML and XHTML?
  
 HTML stands for Hypertext Markup Language, whereas XHTML stands for Extensible Hypertext Markup Language. XHTML is basically an extension of HTML, which is stricter than HTML. Both languages are used to create web and Android applications.
