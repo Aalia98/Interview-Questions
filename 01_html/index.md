@@ -43,9 +43,38 @@
   <img src="img_girl.jpg">
 </picture>
 
+- Note: The value of the colspan attribute represents the number of columns to span.
+- Note: The value of the rowspan attribute represents the number of rows to span.
+- To style every other table row element, use the :nth-child(even) selector like this:
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+- Note: If you use (odd) instead of (even), the styling will occur on row 1,3,5 etc. instead of 2,4,6 etc.
+
+- Note: The <colgroup> tag must be a child of a <table> element and should be placed before any other table elements, like <thead>, <tr>, <td> etc., but after the <caption> element, if present.
+- If you want to style more columns with different styles, use more <col> elements inside the <colgroup>:
+
+<colgroup>
+    <col span="2" style="background-color: #D6EEEE">
+    <col span="3" style="background-color: pink">
+    <col span="2" style="background-color: lightgreen">
+</colgroup>
+
 1. What is the difference between HTML and XHTML?
  
 HTML stands for Hypertext Markup Language, whereas XHTML stands for Extensible Hypertext Markup Language. XHTML is basically an extension of HTML, which is stricter than HTML. Both languages are used to create web and Android applications.
+
+2. Difference Between HTML and HTML5?
+
+- Form Controls:
+
+HTML: Limited form validation on JavaScript for user input validation.
+HTML5: Adds new form input types (e.g., <input type="email">, <input type="url">) and attributes for native form validation.
+
+- Storage:
+
+HTML: Limited client-side storage options, often relying on cookies.
+HTML5: Introduces localStorage and sessionStorage for more efficient client-side storage.
 
 2. What are the building blocks of HTML and HTML5?
 

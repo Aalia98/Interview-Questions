@@ -13,7 +13,7 @@
 <sub> - Subscript text
 <sup> - Superscript text
 
-2. Name the input types in HTML?
+2. Name the input attribute types in HTML?
 
 01.	color	        Gives the end user a native color picker to choose a color.
 02.	date	        Offers a date picker.
