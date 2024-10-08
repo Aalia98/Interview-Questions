@@ -1,12 +1,12 @@
 ## React Interview Questions ----
 
-1. What is React?
+# 1. What is React?
 
 - React(aka React.js or ReactJS) is an open-source front-end JavaScript library that is used for building composable user interfaces, especially for single-page applications. It is used for handling view layer for web and mobile apps based on components in a declarative approach.
 
 - React was created by "Jordan Walke", a software engineer working for Facebook. React was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012.
 
-2. What is the history behind React evolution?
+# 2. What is the history behind React evolution?
 
 - The history of ReactJS started in 2010 with the creation of XHP. XHP is a PHP extension which improved the syntax of the language such that XML document fragments become valid PHP expressions and the primary purpose was used to create custom and reusable HTML elements.
 
@@ -16,7 +16,7 @@
 
 Note: JSX comes from the idea of XHP
 
-3. What are the major features of React?
+# 3. What are the major features of React?
 
 - The major features of React are:
 
@@ -26,7 +26,7 @@ Note: JSX comes from the idea of XHP
 * Follows Unidirectional or one-way data flow or data binding.
 * Uses reusable/composable UI components to develop the view.
 
-4. What is JSX?
+# 4. What is JSX?
 
 - JSX stands for JavaScript XML and it is an XML-like syntax extension to ECMAScript. Basically it just provides the syntactic sugar for the React.createElement(type, props, ...children) function, giving us expressiveness of JavaScript along with HTML like template syntax.
 
@@ -51,7 +51,7 @@ export default function App() {
 See Class
 Note: JSX is stricter than HTML
 
-5. What is the difference between Element and Component?
+# 5. What is the difference between Element and Component?
 
 - An Element is a plain object describing what you want to appear on the screen in terms of the DOM nodes or other components. Elements can contain other Elements in their props. Creating a React element is cheap. Once an element is created, it cannot be mutated.
 
@@ -88,7 +88,7 @@ const Button = ({ handleLogin }) =>
     "Login"
   );
 
-6. What are the different phases of the component lifecycle in React?
+# 6. What are the different phases of the component lifecycle in React?
 
 There are four different phases of component’s lifecycle:
 
@@ -102,7 +102,7 @@ Unmounting: In this last phase, the component is not needed and gets unmounted f
 
 Error Handling: In this phase, the component is called whenever there's an error during rendering, in a lifecycle method, or in the constructor for any child component. This phase includes the componentDidCatch lifecycle method.
 
-7. What is a virtual DOM and why is it used in libraries/frameworks?
+# 7. What is a virtual DOM and why is it used in libraries/frameworks?
 
 The virtual DOM (VDOM) is a representation of the real DOM in the form of plain JavaScript objects. These objects have properties to describe the real DOM nodes they represent: the node name, its attributes, and child nodes.
 
@@ -138,7 +138,7 @@ The library/framework uses the virtual DOM as a means to improve performance. Wh
 
 Once the changes between the old VDOM and new VDOM have been calculated by the diffing engine of the framework, the real DOM can be patched efficiently in the least time possible to match the new state of the application.
 
-8. What are higher-order components?
+# 8. What are higher-order components?
 
 A higher-order component (HOC) is a function that takes a component as an argument and returns a new component. It is a pattern that is derived from React’s compositional nature. Higher-order components are like pure components because they accept any dynamically provided child component, but they won’t modify or copy any behavior from their input components.
 
@@ -146,7 +146,7 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent)
 Good to hear
 They can be used for state abstraction and manipulation, props manipulation, render hijacking, etc.
 
-9. What are portals in React?
+# 9. What are portals in React?
 
 - Portal are the recommended way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
 
