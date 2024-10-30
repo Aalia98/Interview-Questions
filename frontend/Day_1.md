@@ -20,7 +20,7 @@ for (int i = 0; i < arr.length-1; i++) {
 
 # Q3 What are void elements in HTML?
 
-A void element is an element whose content model never allows it to have contents under any circumstances. Void elements can have attributes. The following is a complete list of the void elements in HTML : area , base , br , col , command , embed , hr , img , input , keygen , link , meta , param , source , track , wbr.
+In HTML, void elements (also known as self-closing elements) are elements that do not have any content or closing tags. Void elements can have attributes. The following is a complete list of the void elements in HTML : area , base , br , col , command , embed , hr , img , input , keygen , link , meta , param , source , track , wbr.
 
 # Q4 How to optimize website assets loading?
 
