@@ -24,12 +24,12 @@ return result;
 const numbers = [1, 2, 3, 4, 5];
 
 const doubledNumbers = customMap(numbers, function (num) {
-return num \* 2;
+return num * 2;
 });
 
 console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
 
-# What will be output and give reasons ******\*\*******
+# What will be output and give reasons 
 
     var a = 5;
     (function() {
@@ -110,7 +110,7 @@ maxNum = arr[i];
 }
 console.log(maxNum);
 
-# Sort this array ac to price, if price is same then sort ac to order \*done tomorrow
+# Sort this array ac to price, if price is same then sort ac to order
 
 const products = [
 {
@@ -142,6 +142,9 @@ color: "black",
 category: "electronics",
 },
 ];
+
+products.sort((a,b) => a.price - b.price);
+console.log(products);
 
 # What are the different kinds of Doctypes available?
 
