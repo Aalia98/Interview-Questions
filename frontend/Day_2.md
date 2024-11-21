@@ -63,8 +63,6 @@ background-position: 0 0;
 background-position: -20px 0;
 }
 
-Is example mein, aapke paas ek sprite image ('sprites.png') hai jisme kai icons hain. Har ek icon ko display karne ke liye aapne specific CSS classes create ki hain, aur background position ko adjust kiya hai taki har ek icon ki jagah sahi dikhaye.
-
 # What are the different media types allowed by CSS?
 
 CSS (Cascading Style Sheets) supports various media types, which allow you to apply different styles based on the type of media being used to display the document. Here are some commonly used media types in CSS:

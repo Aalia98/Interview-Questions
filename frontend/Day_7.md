@@ -2,13 +2,45 @@
 
 # find second max number in the array.
 
+const numbers = [6,9,2,7,1,8,5];
+let maxVal = 0, secondMaxVal = 0;
+
+for(let i = 0; i < numbers.length; i++) {
+    if(numbers[i] > maxVal) maxVal = numbers[i];
+    if(numbers[i] > secondMaxVal && numbers[i] !== maxVal) secondMaxVal = numbers[i];
+}
+console.log(secondMaxVal);
+
 # how hoisting behaves with let and const compared to var.
+
+- All variables (var, let, const) are hoisted in JavaScript.
+- var is initialized with undefined, so it can be accessed before declaration without throwing an error (but will return undefined).
+- let and const are hoisted but not initialized, so accessing them before declaration results in a ReferenceError due to the Temporal Dead Zone (TDZ).
 
 # what is temporal dead zone and when it occurs.
 
+- The Temporal Dead Zone (TDZ) is a behavior in JavaScript that occurs when trying to access a variable before it has been declared using the let or const keywords. During the TDZ, attempting to access the variable will result in a ReferenceError.
+- The TDZ starts at the beginning of the scope (block, function, or module) where the variable is declared and continues until the actual declaration statement.
+
 # Differentiate between the global execution context and function execution context.
 
-# Explain the concept of the "macrotask" and "microtask" in the context of the event loop. *****
+- Global execution context is always created once at the start and remains until the program ends.
+WHILE
+- Function execution context is created dynamically whenever a function is invoked and is destroyed when the function ends.
+
+# Explain the concept of the "macrotask" and "microtask" in the context of the event loop.
+
+- In JavaScript, the event loop is a mechanism that handles the execution of asynchronous code. Within the event loop, macrotasks and microtasks are two types of tasks with different priorities.
+
+- Macrotasks:
+  - Lower priority.
+  - Examples: setTimeout, setInterval, I/O tasks.
+  - Executed after all microtasks in the current cycle are completed.
+
+- Microtasks:
+  - Higher priority.
+  - Examples: Promise.then, queueMicrotask, MutationObserver.
+  - Executed immediately after the current execution context finishes.
 
 # Explore errors.
 
