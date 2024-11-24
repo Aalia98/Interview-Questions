@@ -2,15 +2,69 @@ frontend interview 6: [marks - 33.5/75]
 
 [5x6]
 # different ways to create an object [4]
+
+- Object Literal:	Simple, quick object creation.
+- Object Constructor:	Rarely used, outdated.
+- Constructor Function:	For creating multiple similar objects (pre-ES6).
+- Classes:	Modern, cleaner way to create multiple objects.
+- Object.create():	Create objects with custom prototypes.
+- Factory Function:	Encapsulation and modularity.
+- JSON Parsing:	When data comes in JSON format.
+- Object.assign():	Combine or clone objects.
+- Spread Operator:	Cleaner syntax for cloning or merging objects.
+
 # How do you add a method to an existing object [6]
+
+- Dot and Bracket Notation: Simple and direct for adding a method to a single object.
+- Object.defineProperty(): For fine-grained control over property behavior.
+- Prototype: For adding methods shared across all instances of an object.
+- Class: For object-oriented programming.
+- Spread and Object.assign(): For creating a new object with added methods.
+
 # What is the difference between dot notation (.) and bracket notation ([]) when accessing object properties [3]
+
+- Dot Notation (.)
+The most common and straightforward way to access an object’s property.
+The property name must be a valid JavaScript identifier (e.g., no spaces, special characters, or numbers at the beginning).
+- Bracket Notation ([])
+A more flexible way to access properties, especially when the property name is dynamic, contains special characters, or is stored as a string.
+
 # How do you use object destructuring to assign variables with different names than the object properties? [6]
+
+- Object destructuring is a feature introduced in ES6 that allows you to unpack properties from objects into distinct variables in a concise and readable manner.This is done by using a colon (:) followed by the new variable name.
+const person = {
+  name: "Alice",
+  age: 30
+};
+
+// Renaming the properties during destructuring
+const { name: fullName, age: yearsOld } = person;
+
+console.log(fullName); // Output: Alice
+console.log(yearsOld); // Output: 30
+
 # Explain the concept of immutability in JavaScript objects. [2]
+
+- Immutability in JavaScript refers to the concept where data cannot be modified after it is created. Instead of directly changing the values of objects or arrays, new objects or arrays are created with updated values.
+
 # How would you deeply clone an object in JavaScript? [0]
+
+- A deep clone creates a completely independent copy of an object or array, including all nested structures.
+- Changes to nested objects or arrays in the copy do not affect the original, as they are fully duplicated.
+- To deeply clone an object in JavaScript, you can use:
+  - JSON.parse() and JSON.stringify()
+  - Recursive Function
+  - structuredClone()
+  - Lodash's cloneDeep()
 
 [2x2.5]
 # What is the purpose of the hasOwnProperty method in JavaScript? [0]
+
+- The hasOwnProperty method is a reliable way to check whether a property belongs directly to an object and not its prototype. It is especially useful in scenarios involving inheritance or property iteration to avoid accidental inclusion of inherited properties. 
+
 # How can you remove a property from an object? [2.5]
+
+- To remove a property from an object in JavaScript, you can use the delete operator.
 
 # coding: 
 1. Write a function that takes this array as input and returns an object with role-wise counts [0/10]
