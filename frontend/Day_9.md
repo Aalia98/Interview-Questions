@@ -60,11 +60,11 @@ console.log(yearsOld); // Output: 30
 [2x2.5]
 # What is the purpose of the hasOwnProperty method in JavaScript? [0]
 
-- The hasOwnProperty method is a reliable way to check whether a property belongs directly to an object and not its prototype. It is especially useful in scenarios involving inheritance or property iteration to avoid accidental inclusion of inherited properties. 
+- The hasOwnProperty method is a reliable way to check whether a property belongs directly to an object and not its prototype.
 
 # How can you remove a property from an object? [2.5]
 
-- To remove a property from an object in JavaScript, you can use the delete operator.
+- by using delete operator.
 
 # coding: 
 1. Write a function that takes this array as input and returns an object with role-wise counts [0/10]
@@ -132,6 +132,15 @@ output:
   email: "john@example.com",
   age: 28
 }
+answer:
+const result = {
+  username: authenticationData.username,
+  password: authenticationData.password,
+  name: profileData.name,
+  email: profileData.email,
+  age: profileData.age,
+};
+console.log(result);
 
 3. You have a large dataset of items, and you need to implement pagination.  [0/20]
 Write a function that takes this data as input and returns an array representing the items on the current page.
@@ -173,7 +182,7 @@ output:
 function pagination(currentPage, itemsPerPage) {
   let startIndex = (currentPage-1)*itemsPerPage;
   const pageItems = allItems.slice(startIndex, (itemsPerPage+startIndex));
-console.log(pageItems)
+console.log(pageItems);
 }
 
 pagination(7, 3);
